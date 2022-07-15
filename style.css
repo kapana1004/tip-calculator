@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    box-sizing: border-box;
+    background-color: rgba(197, 228, 231, 1);
+    /* background-image: url(./images/logo.svg);
+    background-repeat: no-repeat; */
+    
+    
+}
+
+.sec1{
+
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 144px;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.split{
+
+    width: 87px;
+    height: 53px;
+    position: absolute;
+    top: 7%;
+    left: 36%;
+}
+
+.d1{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.spn1{
+
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    margin-left: 32px;
+    margin-top: 32px;
+    margin-bottom: 6px;
+}
+
+.btn1{
+    display: flex;
+    width: 311px;
+    height: 48px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    background-color: rgba(243, 249, 250, 1);
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+
+}
+
+.dolicon1{
+    width: 10px;
+    position: absolute;
+    top: 34%;
+    left: 12%;
+}
+
+.spn2{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 32px;
+    margin-bottom: 16px;
+    color: rgba(94, 122, 125, 1);
+
+}
+
+.buttons{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap:  16px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+}
+
+.btnall{
+
+    width: 146px;
+    height: 48px;
+    background-color: rgba(0, 71, 75, 1);
+    font-family: 'Space Mono', monospace; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 1);
+    
+
+
+}
+
+.btncustom{
+
+    width: 146px;
+    height: 48px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(84, 120, 120, 1);
+    background-color: rgba(243, 249, 250, 1);
+}
+
+.numb{
+
+    
+        font-family: 'Space Mono', monospace;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 32px;
+        margin-bottom: 6px;
+        color: rgba(94, 122, 125, 1);
+}
+
+.btn2{
+
+    display: flex;
+    width: 311px;
+    height: 48px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    background-color: rgba(243, 249, 250, 1);
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+}
+
+.icon{
+
+    width: 13px;
+    left: 12%;
+    top: 88%;
+    position: absolute;
+}
+
+.d2{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 71, 75, 1);
+    width: 326px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+    border-radius: 15px;
+}
+
+.last{
+
+    width: 281px;
+    height: 48px;
+    border-radius: 5px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    font-family: 'Space Mono', monospace;
+    background-color: rgba(38, 194, 174, 1);
+    color: rgba(0, 71, 75, 1);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.tip-pers{
+
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+    margin-top: 39px;
+}
+
+.dollar2{
+
+    margin-top: 15px;
+    margin-right: 22px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    /* text-align: right; */
+    letter-spacing: -0.666667px;
+    color: rgba(38, 194, 174, 1);
+}
+
+.tot-pers{
+
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+    margin-top: 39px;
+    margin-bottom: 32px;
+
+}
+
+.dollar3{
+
+    margin-top: 15px;
+    margin-right: 22px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    /* text-align: right; */
+    letter-spacing: -0.666667px;
+    color: rgba(38, 194, 174, 1);
+}
+
+h3 {
+font-family: 'Space Mono', monospace;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: rgba(255, 255, 255, 1);
+
+}
+
+.pers1{
+font-family: 'Space Mono', monospace;
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 19px;
+color: rgba(127, 157, 159, 1);
+}
+.pers2{
+
+font-family: 'Space Mono', monospace;
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 19px;
+color: rgba(127, 157, 159, 1);
+}
