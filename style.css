@@ -16,7 +16,6 @@ body{
 
     display:flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 1);
     margin-top: 144px;
     width: 100%;
     min-height: 100vh;
@@ -36,6 +35,8 @@ body{
 
     display: flex;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 25px 25px 0px 0px;
     
 }
 
@@ -89,6 +90,7 @@ body{
     row-gap:  16px;
     margin-left: 32px;
     margin-bottom: 32px;
+    
 }
 
 .btnall{
@@ -102,6 +104,7 @@ body{
     font-size: 24px;
     line-height: 36px;
     color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
     
 
 
@@ -118,6 +121,7 @@ body{
     line-height: 36px;
     color: rgba(84, 120, 120, 1);
     background-color: rgba(243, 249, 250, 1);
+    border-radius: 5px;
 }
 
 .numb{
@@ -259,4 +263,9 @@ font-weight: 700;
 font-size: 13px;
 line-height: 19px;
 color: rgba(127, 157, 159, 1);
+}
+
+.sec2{
+
+    background-color: rgba(255, 255, 255, 1);
 }
