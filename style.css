@@ -269,3 +269,18 @@ color: rgba(127, 157, 159, 1);
 
     background-color: rgba(255, 255, 255, 1);
 }
+
+
+.dolicon{
+
+    margin-top: 15px;
+    margin-right: 22px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    /* text-align: right; */
+    letter-spacing: -0.666667px;
+    color: rgba(38, 194, 174, 1);
+}
