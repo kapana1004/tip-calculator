@@ -1,4 +1,6 @@
 
+
+
 let billAmount =0;
 let tipAmount5 =5;
 let tipAmoun10 =10;
@@ -6,6 +8,8 @@ let tipAmount15 =15;
 let tipAmount25 =25;
 let tipAmount50 =50;
 let totalAmount = 0;
+
+let numberOfPeople = 0;
 
 
 let tipButton5 = document.getElementById("btn5");
@@ -15,100 +19,69 @@ let tipButton25 = document.getElementById("btn25");
 let tipButton50 = document.getElementById("btn50");
 
 
+
+
+
 let billInput = document.getElementById("b1");
 let tipResult = document.querySelector(".dollar2");
 let totalResult = document.querySelector(".dollar3");
 
-// let btnArr = document.querySelectorAll(".btnall");
+let btnArr = document.querySelectorAll(".btnall");
+
+let numberOfPeopleresult = document.getElementById("b2");
 
 
 
-// for (let i = 0; i < btnArr.length; i++) {
+for (let i = 0; i < btnArr.length; i++) {
 
-//     console.log(btnArr[i]);
-//     btnArr[i].addEventListener('click', function(){
+    console.log(btnArr[i]);
+    btnArr[i].addEventListener('click', function(event){
 
-//       console.log(btnArr[i]);
+      // console.log(btnArr[i].textContent.replace("%", ""));
 
-//     })
-// }
+      billAmount = billInput.value;
+      totalTip = billAmount * event.target.value/ 100;
+      totalAmount = parseInt(billAmount) + totalTip;
+      
+         console.log(billAmount, totalTip);
+
+      tipResult.innerHTML = "$" + totalTip;
+      totalResult.innerHTML = "$" + totalAmount;
+      
+      if (numberOfPeople > 1){
+
+        tipResult.innerHTML ="$" + (totalTip / numberOfPeople).toFixed(2);
+        totalResult.innerHTML = "$" + (totalAmount / numberOfPeople).toFixed(2);
 
 
-tipButton5.addEventListener('click', function(){
+      
 
-  billAmount = billInput.value;
-  // tipAmount5 = parseInt(tipAmount5.value);
-  totalAmount = parseInt(totalResult.value);
+      }
+      
+    })
   
 
-  totalTip =  billAmount * tipAmount5 / 100;
+   
+  }
 
-  totalAmount = billAmount + totalTip;
+  numberOfPeopleresult.addEventListener('input', function(){
 
-tipResult.innerHTML = totalTip;
+    numberOfPeople = numberOfPeopleresult.value;
 
-totalResult.innerHTML =  totalAmount;
+  
 
-    
-     
-    
-    
-})
+      if (numberOfPeople > 1){
 
-
-tipButton10.addEventListener('click', function(){
-
-  billAmount = billInput.value;
+        tipResult.innerHTML = "$" + (totalTip / numberOfPeople).toFixed(2);
+        totalResult.innerHTML = "$" + (totalAmount / numberOfPeople).toFixed(2);
 
 
-  totalTip = billAmount * tipAmoun10 / 100;
+      
 
+      }
+    }
 
-  tipResult.innerHTML = totalTip;
+  )
 
 
 
-})
-
-tipButton15.addEventListener('click', function (){
-
-
-billAmount = billInput.value;
-
-totalTip = billAmount * tipAmount15 / 100;
-
-
-tipResult.innerHTML = totalTip;
- 
-
-
-})
-
-tipButton25.addEventListener('click', function(){
-
-
-  billAmount = billInput.value;
-  totalTip = billAmount * tipAmount25 / 100;
-
-  tipResult.innerHTML = totalTip;
-
-
-})
-
-tipButton50.addEventListener('click', function(){
-
-
-  billAmount = billInput.value;
-  totalTip = billAmount * tipAmount50 / 100;
-
-  tipResult.innerHTML = totalTip;
-
-})
-
-
-
-//RESET ღილაკზე დასაყენებელია ლისენერი, რომლის კლიკზეც გამოიძახება ფუნქცია, რომელიც tipButton-ებს 
-//ლისენერებს რიმუვს გაუკეთებს.
-
-
-//totalAmount არ აჯამებს tip & bill amount-ებს
