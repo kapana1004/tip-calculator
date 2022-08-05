@@ -112,9 +112,10 @@ body{
 }
 
 .btncustom{
-
-    width: 146px;
-    height: 48px;
+    
+    text-align: center;
+    width: 140px;
+    height: 43px;
     font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: 700;
