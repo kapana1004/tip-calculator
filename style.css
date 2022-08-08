@@ -40,12 +40,28 @@ body{
     
 }
 
+.inputwrap{
+
+    position: relative;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    width: 379px;
+}
+
+.peoplewrap{
+
+    position: relative;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    width: 379px;
+}
+
 .spn1{
 
     font-family: 'Space Mono', monospace;
     font-size: 16px;
     margin-left: 32px;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     margin-bottom: 6px;
 }
 
@@ -53,8 +69,8 @@ body{
     display: flex;
     width: 311px;
     height: 48px;
-    margin-bottom: 32px;
-    margin-left: 32px;
+    /* margin-bottom: 32px;
+    margin-left: 32px; */
     background-color: rgba(243, 249, 250, 1);
     border-radius: 5px;
     font-family: 'Space Mono', monospace;
@@ -69,8 +85,9 @@ body{
 .dolicon1{
     width: 10px;
     position: absolute;
-    top: 34%;
-    left: 12%;
+    top: 50%;
+    margin-left: 11px;
+    transform: translate(0, -50%);
 }
 
 .spn2{
@@ -144,8 +161,8 @@ body{
     display: flex;
     width: 311px;
     height: 48px;
-    margin-bottom: 32px;
-    margin-left: 32px;
+    /* margin-bottom: 32px;
+    margin-left: 32px; */
     background-color: rgba(243, 249, 250, 1);
     border-radius: 5px;
     font-family: 'Space Mono', monospace;
@@ -158,11 +175,13 @@ body{
 
 .icon{
 
-    width: 13px;
-    left: 12%;
-    top: 88%;
+    width: 10px;
     position: absolute;
+    top: 50%;
+    margin-left: 11px;
+    transform: translate(0, -50%);
 }
+
 
 .d2{
 
@@ -309,6 +328,7 @@ body{
     max-height: 480px;
     width: 920px;
     margin-top: 304px;
+    margin-bottom: 239px;
 }
 
 
@@ -364,16 +384,12 @@ body{
     width: 100%;
 }
 
-.dolicon1{
 
-    top: 26%;
-    left: 23%;
-}
 
-.icon{
-    left: 23%;
-    top: 44%;
-}
+
+
+
+
 
 .sec2{
 
@@ -415,4 +431,25 @@ body{
 
     font-size: 48px;
 }
+
+.zeroalarm{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.btnall:hover{
+
+    background-color: rgba(159, 232, 223, 1);
+    color: rgba(0, 71, 75, 1);
+}
+
+.zero{
+
+    color: red;
+}
+
+
+
+   
 }

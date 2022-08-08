@@ -14,6 +14,8 @@ let costumButton = 0;
 
 let resetAll;
 
+let zeroText= document.querySelector(".zero");
+
 
 let tipButton5 = document.getElementById("btn5");
 let tipButton10 = document.getElementById("btn10");
@@ -103,7 +105,7 @@ for (let i = 0; i < btnArr.length; i++) {
   
 
   numberOfPeopleresult.addEventListener('input', function(event){
-
+    zeroAlarm ();
     numberOfPeople = numberOfPeopleresult.value;
 
     totalTip = billAmount * buttonPercent/ 100;
@@ -157,6 +159,25 @@ for (let i = 0; i < btnArr.length; i++) {
 
   
   })
+
+
+
+  function zeroAlarm(){
+
+   
+
+     if(numberOfPeopleresult.value < 1){
+
+      zeroText.innerHTML="Can’t be zero";
+     
+     console.log(zeroText);
+
+
+     }
+
+     
+
+  }
 
 
 
