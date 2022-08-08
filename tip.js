@@ -169,10 +169,15 @@ for (let i = 0; i < btnArr.length; i++) {
      if(numberOfPeopleresult.value < 1){
 
       zeroText.innerHTML="Can’t be zero";
+
      
      console.log(zeroText);
 
 
+     }
+     else {
+
+      zeroText.innerHTML = "";
      }
 
      
